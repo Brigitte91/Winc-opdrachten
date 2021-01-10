@@ -1,0 +1,131 @@
+a {
+    color: #2D4861;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D6DFE2;
+}
+
+body {
+    font-family: 'Quicksand';
+    background-color: #73ACB6;
+}
+
+.headersemantic {
+    border: #2D4861 2px solid;
+    margin: 20px auto; width: 80%;
+    padding: 20px 10px;
+
+}
+
+.navsemantic {
+    border: #2D4861 2px solid;
+    margin: 10px auto; width: 80%;
+    padding: 10px;
+}
+
+ .navsemantic ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5px; 
+  
+
+}
+
+.navsemantic li{
+    display: inline;
+
+}
+
+.navsemantic li a{
+    display: inline;
+    margin: 2px;
+    padding: 10px;
+    color: #73ACB6;
+    background-color: #2D4861;
+    line-height: normal;
+}
+
+.navsemantic li a:hover{
+    display: inline;
+    margin: 2px;
+    padding: 10px;
+    color:#2D4861 ;
+    background-color: #73ACB6;
+    line-height: normal;
+}
+.navsemantic li a:active{
+    display: inline;
+    margin: 2x;
+    padding: 10px;
+    color:#2D4861 ;
+    background-color: #73ACB6;
+    line-height: normal;
+}
+
+.navsemantic li a.active{
+    background-color: #D6DFE2;
+    color:#2D4861;
+
+}
+
+.mainsemantic {
+    border: #2D4861 1px solid;
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px 30px;
+}
+
+
+.footersemantic {
+    border: #2D4861 1px solid;
+    margin: 10px auto; width: 85%;
+    padding: 5px;
+}
+
+#header {
+    font: larger, bolder;
+    color: #73ACB6;
+    background-color: #2D4861 ;
+    padding: 5px;
+    text-align: center;
+
+}
+.text1 {
+    line-height: 1.6; 
+    font-size: large;
+    color: #2D4861;
+    background-color: #D6DFE2;
+}
+.text2 {
+    line-height: 1.5;
+    font-size: medium;
+    color: #2D4861;
+    background-color: #D6DFE2;
+}
+
+h2{
+    color: #2D4861
+
+}
+
+h3 {
+    font-style: italic;
+    color: #2D4861;
+    background-color: #D6DFE2;
+
+}
+
+.list {
+    font-size: small;
+    color: #D6DFE2;
+    background-color: #2D4861;
+    line-height: 2em;
+}
+
+.picture {
+    border: #2D4861 solid 3px;
+    box-shadow: 10px 10px #2D4861;
+    object-fit: cover;
+}

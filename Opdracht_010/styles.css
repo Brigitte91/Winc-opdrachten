@@ -1,0 +1,53 @@
+/*mobile*/
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 5fr 3fr 1fr;
+
+    }
+    
+    .div1 {  
+    background-color: indigo;
+        }
+    .div2 { 
+    background-color: pink;
+}
+    .div3 { 
+    background-color: lightblue;}
+
+    .div4 {  
+    background-color: orchid;
+}
+
+@media screen and (min-width: 800px){
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 6fr 3fr 1fr;
+        
+    }
+    .div1{
+        grid-area: 1/1/-1/1
+    }
+
+}
+
+@media screen and (min-width: 1366px){
+    .parent {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 9fr 1fr ;
+        
+    }
+    .div1{
+        grid-area: 1/1/-1/1
+    }
+
+    .div3{
+        grid-area: 1/3/-1/3
+    }
+
+
+
+}

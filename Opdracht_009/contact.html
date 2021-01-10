@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+<head>
+  <title> Make-up basics </title>
+</head>
+
+<body>
+  <header class="headersemantic">
+    <h1 id="header">Contact</h1>
+    <nav class="navsemantic">
+      <ul>
+        <li><a href="index.html">Glowy skin</a></li>
+        <li><a href="page2.html">Smokey eye</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="mainsemantic">
+
+    <h2>Contact me now </h2>
+
+  </main>
+  <form name="contact" data-netlify="true">
+    <p><label for="fname">Naam </label>
+      <input type="text" id="fname" name="fname"></p>
+    <p><label for="lname">Achternaam </label>
+      <input type="text" id="lname" name="lname"></p>
+    <p><label for="email">E-mailadres</label>
+      <input type="email" id="email" name="email"></p>
+    <p><label for="tel">Telefoonnummer</label>
+      <input type="tel" id="tel" name="tel"></p>
+    <p><label for="age">Leeftijd</label>
+      <input type="number" id="age" name="age"></p>
+    <p><label for="birthday">Geboortedatum</label>
+      <input type="date" id="birthday" name="birthday">
+    </p>
+    <p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Man</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Vrouw</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Anders</label>
+    </p>
+
+    <p>
+      Favoriete primer(s)</p>
+    <p>
+      <input type="checkbox" id="illuprimer" name="illuprimer">
+      <label for="illuprimer">Illuminating primer</label>
+      <input type="checkbox" id="blurprimer" name="blurprimer">
+      <label for="blurprimer">Blurring primer</label>
+      <input type="checkbox" id="hydraprimer" name="hydraprimer">
+      <label for="hydraprimer">Hydrating primer</label>
+      <input type="checkbox" id="perfectprimer" name="perfectprimer">
+      <label for="perfectprimer">Perfecting primer</label>
+      <input type="checkbox" id="protectprimer" name="protectprimer">
+      <label for="protectprimer">Protecting primer</label>
+    </p>
+    <p>
+      <label for="color">Favoriete oogschaduwkleur</label>
+      <input type="color" id="color" name="color">
+
+    </p>
+
+    <p><label for="bericht">Beschrijf jouw make-up routine</label>
+      <br>
+      <textarea id="bericht" name="bericht" cols="100" rows="5">
+    Begin hier met typen... Of niet natuurlijk
+  </textarea></p>
+    <p><label for="selfie">Upload een selfie</label><br>
+      <input type="file" id="selfie" name="selfie">
+
+
+    <p>
+      <label for="url">Jouw website</label><br>
+      <input type="url" id="url" name="url">
+
+    </p>
+    <p>
+      <input type="reset" value="Leegmaken">
+
+    </p>
+    </p>
+    <p> <input type="button" value="Verstuur"></p>
+
+  </form>
+
+  <footer class="footersemantic"><a href="about.html">This is me</a></footer>
+</body>
+
+</html>

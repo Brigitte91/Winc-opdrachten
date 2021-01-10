@@ -1,0 +1,49 @@
+body {
+    font-family: 'Quicksand';
+    padding: 30px;
+    margin: 30px;
+    background-color: #73ACB6;
+}
+
+#header {
+    font: larger, bolder;
+    color: #73ACB6;
+    background-color: #2D4861 ;
+
+}
+.text1 {
+    line-height: 1.6; 
+    font-size: large;
+    color: #2D4861;
+    background-color: #D6DFE2;
+}
+.text2 {
+    line-height: 1.5;
+    font-size: medium;
+    color: #2D4861;
+    background-color: #D6DFE2;
+}
+
+h2{
+    color: #2D4861
+
+}
+
+h3 {
+    font-style: italic;
+    color: #2D4861;
+    background-color: #D6DFE2;
+
+}
+
+ul {
+    font-size: small;
+    color: #D6DFE2;
+    background-color: #2D4861
+}
+
+.picture {
+    border: #2D4861 solid 3px;
+    box-shadow: 10px 10px #2D4861;
+    object-fit: cover;
+}
