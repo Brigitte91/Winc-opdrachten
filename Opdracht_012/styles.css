@@ -1,0 +1,58 @@
+body{
+    background-color: aliceblue;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: lightgrey;
+}
+
+.link1>a:hover{
+    color: lightblue;
+    font-weight: bold;
+}
+
+.link2>a:active{
+    color: red;
+    font-style: italic;
+}
+
+.link3>a:visited{
+    color: yellow;
+}
+
+textarea:focus{
+    font-size: 20px;
+    color: green;
+}
+
+ul{
+    margin: 0px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul>li{
+    margin-right: 20px;
+    padding: 2px;
+    list-style: none;
+    background-color: darkblue;
+}
+
+.currentpage{
+    background-color: #7789aa;
+}
+
+ul>li:hover{
+    background-color: lightblue;
+}
+
+.zoekbalk>input:focus{
+    border: solid 3px aqua;
+}
