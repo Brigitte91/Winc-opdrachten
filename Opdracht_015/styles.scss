@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+@import "./constants.scss";
 
 /* Global */
-* {
+
+*{
   box-sizing: border-box;
 }
+
 body {
   color: #090b08;
   margin: 0;
@@ -86,8 +89,8 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  padding: 20px;
-  background-color: #c0eea9;
+  padding: $paddingbasic;
+  background-color: $backgroundheader;
   height: 120px;
   -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
@@ -110,41 +113,30 @@ header {
 .title.title-right {
   justify-content: flex-end;
 }
-.line {
-  width: 3em;
-  height: 1px;
-  background-color: #000;
-  margin-right: 1em;
-  line-right {
-    order: 2;
-    margin-right: 0;
-    margin-left: 1em;
-  }
-}
+
 /* Hero Section */
 .hero {
-  padding: 20px;
+  padding: $paddingbasic;
   display: flex;
   height: 100vh;
   align-items: center;
-  background: #97d279;
+  background: $backgrounddark;
 }
 .hero__img{
   img{  
     display: block;
     height: auto;
     width: 15.5em;
-  }
+    }
 }
+
 .hero__text {
-  max-width: 700px;
-  text-align: center;
-  padding: 20px;
+@include textbasic();
 }
 
 /* Featured Section */
 .featured {
-  padding: 20px;
+  padding: $paddingbasic;
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -155,33 +147,25 @@ header {
     }
   }
   &__text{ 
-    max-width: 700px;
-    text-align: center;
-    padding: 20px;
-    p {
-        text-align: justify;
-        padding: 20px;
-        line-height: 1.4em;
+    @include textbasic();
+
+  }
+  &__line {
+      @include line();
+    &__line-right {
+        @include lineright()
     }
   }
 }
-
 
 /* About Section */
 
 
 .about {
-  background-color: #97d279;
-  padding: 20px;
+  background-color: $backgrounddark;
+  padding: $paddingbasic;
   &__text{
-    max-width: 700px;
-    text-align: center;
-    padding: 20px;
-    p {
-        text-align: justify;
-        padding-bottom: 1em;
-        line-height: 1.4em;
-    }
+    @include textbasic()
   }
   &__wrapper{
     display: flex;
@@ -201,22 +185,29 @@ header {
         height: 100%;
       }
   }
+  &__line {
+    @include line();
+    &__line-right {
+      @include lineright();
+    }
+  }
 }
 
 
 /* Contact Section */
 .contact {
-  padding: 20px;
-}
-.wrapper .contact {
-  display: flex;
-  flex-wrap: wrap;
-}
-.form-wrapper,
-.contact-wrapper {
-  padding: 20px;
+  padding: $paddingbasic;
+  &__line {
+    @include line();
+    &__line-right {
+      @include lineright();
+    }
+  }
+  &__wrapper{
+      padding: $paddingbasic;
+  }
 }
 
-.copy-wrapper {
+.copy {
   padding-left: 20px;
 }

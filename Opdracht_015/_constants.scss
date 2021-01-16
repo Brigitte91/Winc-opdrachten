@@ -1,0 +1,26 @@
+$backgroundheader:#c0eea9;
+$backgrounddark: #97d279;
+$paddingbasic: 20px;
+
+@mixin textbasic {
+    max-width: 700px;
+    text-align: center;
+    padding: 20px;
+    p{ text-align: justify; 
+        padding-bottom: 1em; 
+        line-height: 1.4em;
+    }
+}
+
+@mixin line{
+    display: block;
+    width: 3em; 
+    height: 1px; 
+    background-color: #000; 
+    margin-right: 1em;
+}
+
+@mixin lineright{  order: 2; 
+    margin-right: 0; 
+    margin-left: 1em;
+}
