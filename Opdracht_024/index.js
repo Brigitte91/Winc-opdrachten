@@ -1,33 +1,31 @@
-colors = ["yellow", "red", "blue", "orange"]
-let i = 0;
+// Declaration 
 
-// while loop
-while (colors[i]) {
-    console.log(colors[i]);
-    i++;
-}
-console.log("klaar")
-
-// for loop
-for (i = 0; i <= colors.length - 1; i++) {
-    console.log(colors[i])
-}
-console.log("done")
-
-// for each array methode
-
-colors.forEach(element => console.log(element));
-
-//  object loopen
-
-let loopObject = {
-    name: "Brigitte",
-    age: 29,
-    cat: "Ronin",
-    partner: "Stefan",
-    laptop: "MSI",
+function calcDecl(numberA) {
+    numberB = numberA * numberA;
+    numberC = numberB + numberB;
+    numberD = numberC * numberC;
+    return numberD;
 }
 
-for (const i in loopObject) {
-    console.log(`${i}: ${loopObject[i]}`);
+console.log(calcDecl(3));
+
+// Expression
+
+const calcExpr = function (numberA) {
+    numberB = numberA * numberA;
+    numberC = numberB + numberB;
+    numberD = numberC * numberC;
+    return numberD;
 }
+
+console.log(calcExpr(2));
+
+// Arrow 
+
+const calcArrow = numberA => {
+    numberB = numberA * numberA;
+    numberC = numberB + numberB;
+    numberD = numberC * numberC;
+    return numberD;
+}
+console.log(calcArrow(4))
