@@ -8,19 +8,22 @@ if (person != null) {
 
 var inputNumber = parseInt(prompt("Voer een getal in tussen 0 en 25 om te beginnen met raden :)", ""));
 
-function checkNumber(inputNumber) {
+const generateNumber = function (min, max) {
+    min = Math.ceil(1);
+    max = Math.floor(25);
+    return Math.floor(Math.random() * (max - min) + min);
+}
 
-
+const checkNumber = function (inputNumber) {
     if (inputNumber <= 25 && inputNumber >= 1) {
         alert("knap van jou");
         //  hier de volgende stappen van het spelletje
     } else if (isNaN(inputNumber)) {
-        prompt("Dat is geen getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.", "");
-        return;
+        return prompt("Dat is geen getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.", "");
+
 
     } else {
-        prompt("Dat is een te groot of te klein getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.", "");
-        return;
+        return prompt("Dat is een te groot of te klein getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.", "");
     }
 }
 checkNumber(inputNumber);
