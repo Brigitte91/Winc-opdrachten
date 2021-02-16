@@ -3,7 +3,8 @@ var person = prompt("Welkom! Wat is je naam?", "");
 if (person != null) {
     document.getElementById("name")
     alert(
-        "Hey " + person + "!")
+        "Hey " + person + "!");
+    console.log("Name is " + person);
 }
 
 var inputNumber = parseInt(prompt("Voer een getal in tussen 0 en 25 om te beginnen met raden :)", ""));
@@ -14,9 +15,10 @@ const generateNumber = function (min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-
+console.log("Winning number is " + generateNumber())
 
 const checkNumber = function (inputNumber) {
+    console.log("Input is " + inputNumber);
     if (inputNumber <= 25 && inputNumber >= 1) {
         return true;
     } else if (isNaN(inputNumber)) {
@@ -30,14 +32,12 @@ const checkNumber = function (inputNumber) {
 
 checkNumber(inputNumber);
 
+
 const compareNumber = function (inputNumber, generateNumber) {
-    if (inputNumber == generateNumber()) {
-        console.log("You win woohoo")
-    } else {
-        alert("Try again")
-    }
+    console.log("running the woohoo")
+    if (checkNumber(inputNumber) == true) {
+        // do somethiing
+
+    } else { return };
 }
-
-
-
 
