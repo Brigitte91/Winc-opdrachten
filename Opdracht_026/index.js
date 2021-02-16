@@ -14,17 +14,30 @@ const generateNumber = function (min, max) {
     return Math.floor(Math.random() * (max - min) + min);
 }
 
+
+
 const checkNumber = function (inputNumber) {
     if (inputNumber <= 25 && inputNumber >= 1) {
-        alert("knap van jou");
-        //  hier de volgende stappen van het spelletje
+        return true;
     } else if (isNaN(inputNumber)) {
-        return prompt("Dat is geen getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.", "");
-
-
+        prompt("Dat is geen getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.");
+        return false;
     } else {
-        return prompt("Dat is een te groot of te klein getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.", "");
+        prompt("Dat is een te groot of te klein getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.");
+        return false;
     }
 }
+
 checkNumber(inputNumber);
+
+const compareNumber = function (inputNumber, generateNumber) {
+    if (inputNumber == generateNumber()) {
+        console.log("You win woohoo")
+    } else {
+        alert("Try again")
+    }
+}
+
+
+
 
