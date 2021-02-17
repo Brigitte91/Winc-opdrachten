@@ -1,4 +1,7 @@
 let person = prompt("Welkom! Wat is je naam?", "");
+let minNumber = 0
+let maxNumber = 25
+
 
 if (person != null) {
     document.getElementById("name")
@@ -15,24 +18,27 @@ const generateNumber = function (min, max) {
 
 const checkNumber = function (inputNumber) {
     console.log("Input is " + inputNumber);
-    if (inputNumber <= 25 && inputNumber >= 1) {
+    if (inputNumber <= maxNumber && inputNumber >= minNumber) {
         return true;
     } else if (isNaN(inputNumber)) {
-        prompt("Dat is geen getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.");
+        prompt("Dat is geen getal. Voer een getal in tussen " + minNumber + " en " + maxNumber + " om te beginnen met raden.");
         return false;
     } else {
-        prompt("Dat is een te groot of te klein getal. Voer een getal in tussen 0 en 25 om te beginnen met raden.");
+        prompt("Dat is een te groot of te klein getal. Voer een getal in tussen  " + minNumber + " en " + maxNumber + "  om te beginnen met raden.");
         return false;
     }
 }
 
 const compareNumber = function (inputNumber, generateNumber) {
-    console.log("running the woohoo");
+    console.log("running the winning machine");
     if (checkNumber(inputNumber) === true) {
         if (inputNumber === generateNumber) {
             alert("You win");
         } else {
-            alert("Try again");
+            if (index != 0) {
+                alert("Try again, only " + index + " attempts left");
+            }
+            else { alert("Game over") }
         }
     }
 }
