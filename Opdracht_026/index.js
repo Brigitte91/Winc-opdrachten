@@ -7,15 +7,11 @@ if (person != null) {
     console.log("Name is " + person);
 }
 
-let inputNumber = parseInt(prompt("Voer een getal in tussen 0 en 25 om te beginnen met raden :)", ""));
-
 const generateNumber = function (min, max) {
     min = Math.ceil(1);
     max = Math.floor(25);
     return Math.floor(Math.random() * (max - min) + min);
 }
-
-console.log("Winning number is " + generateNumber())
 
 const checkNumber = function (inputNumber) {
     console.log("Input is " + inputNumber);
@@ -30,18 +26,28 @@ const checkNumber = function (inputNumber) {
     }
 }
 
-checkNumber(inputNumber);
-
-
 const compareNumber = function (inputNumber, generateNumber) {
-    console.log("running the woohoo")
-    if (checkNumber(inputNumber) == true) {
-        if (checkNumber(inputNumber) == generateNumber) {
-            alert("You win")
+    console.log("running the woohoo");
+    if (checkNumber(inputNumber) === true) {
+        if (inputNumber === generateNumber) {
+            alert("You win");
         } else {
-            prompt("Try again");
-            checkNumber(inputNumber);
+            alert("Try again");
         }
-    } else { return checkNumber };
+    }
 }
 
+let inputNumber = -1;
+let index = 5;
+let gen_number = generateNumber();
+console.log("Winning number is " + gen_number);
+while (inputNumber != gen_number && index > 0) {
+    index--;
+    console.log(index);
+    inputNumber = parseInt(prompt("Voer een getal in tussen 0 en 25 om te beginnen met raden :)", ""));
+    compareNumber(inputNumber, gen_number);
+}
+
+if (inputNumber != gen_number) {
+    console.log("Winning number is " + gen_number);
+}
